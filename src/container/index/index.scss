@@ -1,7 +1,71 @@
-@use '../../style' as s;
+
+.page {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	gap: 30px;
+	padding: 40px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 600px;
+	gap: 30px;
+	
+}
 
 main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	gap: 30px;
+	
+}
+.main_img {
+	display: flex;
+	justify-content: space-between;
+}
+.title {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.post_list {
+	display: flex;
+
+	flex-direction: column;
+	gap: 20px;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+	padding: 30px;
+}
+.post_category {
+	display: flex;
+	gap: 10px;
+	border: 20px;
+	
+}
+.category--1 {
+	color: #F46F17;
+	background-color: #F7E9E1;
+	padding: 10px;
+	border-radius: 20px;
+}
+.category--2 {
+	color: #EF5DA8;
+	background-color: #F6E8EF;
+	padding: 10px;
+	border-radius: 20px;
+}
+.description {
+	font-size: 16px;
+	color: #363636;
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+.info_title {
+	color: #363636;
+	font-size: 16px;
+}

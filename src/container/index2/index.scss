@@ -1,0 +1,44 @@
+.page {
+display: flex;
+flex-direction: column;
+max-width: 440px;
+padding: 40px;
+gap: 30px;
+}
+
+.main_img {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+.button_info {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.text {
+    color: #888888;
+}
+.title1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+.title2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.description {
+    font-size: 16px;
+}
+.btn {
+    padding: 10px;
+   background-color: #F46F17;
+   border-radius: 10px;
+   color: white;
+}
