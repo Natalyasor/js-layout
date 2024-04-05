@@ -1,4 +1,7 @@
-import { createElement } from '../../script/layout'
+import {
+  createElement,
+  createHeader,
+} from '../../script/layout'
 
 const page = document.querySelector('.page')
 
@@ -32,7 +35,7 @@ const POST_LIST = [
 ]
 
 const createPost = () => {
-  const postList = createElement('div', 'info_list')
+  const postList = createElement('div', 'post_list')
 
   POST_LIST.forEach((postData) => {
     const post = createElement(
@@ -42,12 +45,9 @@ const createPost = () => {
         : 'post button',
     )
 
-    const postHeader = createElement('div', 'post_header')
+    const postHeader = createElement('div', 'info')
 
-    const categoryList = createElement(
-      'div',
-      'post_category',
-    )
+    const categoryList = createElement('div', 'info')
 
     postData.category.forEach((category) => {
       const categorySpan = createElement(
@@ -67,7 +67,7 @@ const createPost = () => {
 
     const infoParagraph = createElement(
       'p',
-      'info_title',
+      'post_list',
       postData.info,
     )
     post.append(postHeader, infoParagraph)
